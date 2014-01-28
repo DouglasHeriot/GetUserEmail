@@ -10,12 +10,8 @@
 
 int main(int argc, const char * argv[])
 {
-
 	@autoreleasepool {
-	    
-	    // insert code here...
-	    NSLog(@"Hello, World!");
-	    
+	    NSLog(@"Your email address is: %@", [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleID"]);
 	}
     return 0;
 }
